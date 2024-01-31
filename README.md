@@ -1,67 +1,66 @@
 ## 3-5
 
-- [ ] 提现成功后没关闭窗口
-- [ ] 个人信息审核的时候，WAITING 的状态要显示在前端
+- [ ] The withdrawal window doesn't close after a successful withdrawal.
+- [ ] During personal information verification, the WAITING status should be displayed on the frontend.
 
 ## 3-3
 
-- [x] web3 错误提示，大概率是没拿到地址信息。
+- [x] Web3 error prompt, most likely due to not receiving address information.
 
-  - 已完成，需要多测试一下
+  - Completed, needs further testing.
 
-- [x] jackpot 拆分目标和发放值，加到后台配置参数里
+- [x] Separate jackpot target and distribution values, add them to backend configuration parameters.
 
-  - 已完成，发放空投要再测试一下
+  - Completed, airdrop distribution needs further testing.
 
-- [] jackpot 列表的用户信息弹窗
-  隐藏
+- [ ] User information popup for the jackpot list.
+  Hide.
 
-- [x] 个人 yield 进出账?再对一下需求
+- [x] Check personal yield transactions again for missing statistical entry points.
 
-  - 缺一些统计的入口
+- [x] Refresh the UnLock bonus.
 
-- [x] UnLock bonus 要刷新
+- [x] Referral rewards should only be distributed upon staking.
 
-- [x] 转介要 staking 才发
+  - Completed, needs testing.
 
-  - 已完成，需要测试一下
+- [x] Language packs.
 
-- [x] 语言包
+  - Frontend files are ready, waiting for translation.
+  - Backend files are ready, waiting for translation.
 
-  - 前端的文件做好了，等翻译
-  - 后端的文件做好了，等翻译
+- [x] Provide rejection reasons for failed identity verification and send an internal message/update backend with rejection reasons.
+  - [x] Backend added verification fields.
+  - [x] Frontend shows corresponding status on three cards.
 
-- [x] 身份认证审核不通过的理由，并发站内信/后台改加填驳回原因
-  - [x]后台增加了审核的字段
-  - [x] 前端 3 个卡片，显示对应的状态
-- [x] support 后台
+- [x] Support backend.
 
-- [x] support 后台
+- [x] Support backend.
 
-  - [x] 加关闭按钮
-  - [x] 表格加状态字段，加是否未处理 backend_is_new
-  - [x] 加一个更新时间，加排序
+  - [x] Add a close button.
+  - [x] Add a status field to the table, add whether it is unresolved (backend_is_new).
+  - [x] Add an update time and sorting.
 
-- [ ] 手动兑换，可能会有问题，手动后币价没变？
+- [ ] Manual exchange may have issues, does the coin price change manually?
 
-- [x] 手动兑换，点完要刷新页面
+- [x] After manual exchange, the page should be refreshed.
 
-- [ ] 发放空投，未测试
+- [ ] Airdrop distribution not tested.
 
-- [ ] 可能问题，试用结束没刷新 jackpot 的余额
+- [ ] Potential issue, trial end may not refresh jackpot balance.
 
-  - [ ] 测试一下不开启自动空投
+  - [ ] Test without enabling automatic airdrop.
 
-- [ ] 后台 api：定时任务跑收益时，处理自动 staking（逐仓已完成，未测试）（全仓未完成）
+- [ ] Backend API: When running earnings in scheduled tasks, handle automatic staking (per warehouse completed, untested) (full warehouse incomplete).
 
-- [ ] 默认语言包极小概率导致错误，清空缓存可以解决
+- [ ] Small probability of errors due to default language packs, clearing the cache can solve it.
 
-- [ ] 后台任务的一些日志要详细一点
+- [ ] Make some backend task logs more detailed.
 
-- [x] assets->wallet 点击 staking 要 loading，web3 交易金额为 0
+- [x] Clicking on staking in assets->wallet should show loading, web3 transaction amount is 0.
 
-- [ ] exchange airdrop 完成后刷新，检查一下
+- [ ] After completing exchange airdrop, refresh and check.
 
-测试 Nginx
-在 cb-customer 根目录下执行: sh build.sh
-在 cb-nginx 项目下，切换到 local-dev 的分支，然后根目录下运行：sh build.sh
+Test Nginx: 
+Execute sh build.sh in the cb-customer root directory.
+In the cb-nginx project, switch to the local-dev branch, then run: sh build.sh in the root directory.
